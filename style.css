@@ -1,0 +1,167 @@
+/* Genel Temalar ve Stil */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s ease;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #fff;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+    border-bottom: 5px solid #6a1b9a;
+    position: relative;
+}
+
+.profile {
+    margin-bottom: 20px;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+h1 {
+    margin: 10px 0;
+    font-size: 2.5rem;
+}
+
+p {
+    margin: 5px 0;
+}
+
+.icons {
+    margin-top: 20px;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    margin: 0 15px;
+    transition: transform 0.3s ease;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+}
+
+/* Dark/Light Mode Butonu */
+button.mode-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #6a1b9a;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+button.mode-toggle:hover {
+    background-color: #7b2cbf;
+}
+
+/* Dil Değiştirici */
+button.lang-toggle {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #6a1b9a;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+button.lang-toggle:hover {
+    background-color: #7b2cbf;
+}
+
+.about, .download-cv, .contact-form {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.download-btn {
+    background-color: #6a1b9a;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 1.2rem;
+}
+
+.download-btn:hover {
+    background-color: #7b2cbf;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Textbox ve Textarea Stil */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #6a1b9a;
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Başarı Mesajı Stili */
+.success-message {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    display: none;
+}

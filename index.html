@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sait Bütün - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body class="dark-mode"> <!-- Sayfa dark modda başlasın -->
+
+    <header>
+        <div class="container">
+            <div class="profile">
+                <img src="images/ben.jpeg" alt="Sait Bütün" class="profile-image">
+                <h1 id="name">Sait Bütün</h1>
+                <p id="title">Cloud & DevOps Engineer</p>
+                <div class="contact-info">
+                    <p id="phone">Phone: 05511616612</p>
+                    <p id="email">Email: msait.butun@ogr.ksbu.edu.tr</p>
+                </div>
+            </div>
+            <div class="icons">
+                <img src="images/aws-icon.png" alt="AWS Cloud" class="icon">
+                <img src="images/devops-icon.png" alt="DevOps Icon" class="icon">
+            </div>
+            <button class="mode-toggle">🌙</button> <!-- Dark/Light mode butonu -->
+            <button class="lang-toggle">EN</button> <!-- Dil Değiştirici -->
+        </div>
+    </header>
+
+    <section class="about">
+        <div class="container">
+            <h2 id="about-header">About Me</h2>
+            <p id="about-text">
+                I am a passionate Cloud and DevOps Engineer with experience in developing and managing cloud-based solutions. 
+                I have worked with various cloud platforms, focusing on creating scalable, cost-effective, and high-performance solutions.
+                <br><br>
+                My expertise lies in cloud technologies such as AWS, Azure, and GCP, along with infrastructure as code (IaC) tools like Terraform and CloudFormation. I have a deep understanding of continuous integration and deployment (CI/CD) pipelines, containerization (Docker, Kubernetes), and serverless architectures.
+                <br><br>
+                In addition to my technical skills, I am a strong advocate for automation and streamlining processes to improve productivity and minimize human error.
+                <br><br>
+                My goal is to work with forward-thinking companies to help them leverage cloud technologies to drive business growth and innovation.
+            </p>
+        </div>
+    </section>
+
+    <section class="download-cv">
+        <div class="container">
+            <a href="files/Sait Bütün.pdf" download target="_blank" class="download-btn">Download CV</a>
+        </div>
+    </section>
+
+    <section class="contact-form">
+        <div class="container">
+            <h2 id="contact-header">Contact Me</h2>
+            <form action="https://formspree.io/f/xeoqbkpn" method="POST">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Sait Bütün</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
